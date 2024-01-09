@@ -35,6 +35,9 @@ func ScrapeWebPage(url string) (string, error) {
 }
 
 func ConcurrentScrape(urls []string) map[string]string {
+	// ConcurrentScrape concurrently scrapes multiple web pages.
+	// It takes a slice of URLs, launches a go routine for each URL to scrape,
+	// and returns a map where the keys are the URLs and the values are the scraped content or error message.
 	var wg sync.WaitGroup
 	results := make(map[string]string)
 
