@@ -7,6 +7,7 @@ import (
 	"sync"
 )
 
+// ScrapeWebPage scrapes the given URL's web page and returns the text content.
 func ScrapeWebPage(url string) (string, error) {
 	resp, err := http.Get(url)
 	if err != nil {
