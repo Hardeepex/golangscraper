@@ -6,6 +6,7 @@ import (
 	"golang.org/x/net/html"
 )
 
+// RenderJavaScript renders JavaScript from a given URL using Selenium and returns the resulting HTML source.
 func RenderJavaScript(url string) (string, error) {
 	caps := selenium.Capabilities{"browserName": "firefox"}
 	wd, err := selenium.NewRemote(caps, "")
