@@ -1,5 +1,6 @@
 func main() {
-	// Call the function to start the web scraper
+	// This is the entry point of the application.
+	// The main function initializes and starts the web scraper.
 	startWebScraper()
 }
 
